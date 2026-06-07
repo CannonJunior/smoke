@@ -1,0 +1,88 @@
+{
+  "fire": {
+    "particlesPerZoneMax": 800,
+    "emitRatePerSecond": 90,
+    "fireLifetimeMin": 1.2,
+    "fireLifetimeMax": 2.8,
+    "fireSizeMin": 0.4,
+    "fireSizeMax": 1.8,
+    "smokeSizeMin": 2.0,
+    "smokeSizeMax": 5.0,
+    "buoyancy": 5.2,
+    "smokeBuoyancy": 13.0,
+    "smokeDrag": 0.8,
+    "altWindBase": 30.0,
+    "altWindStrength": 3.5,
+    "altWindRange": 50.0,
+    "altDissipation": 1.2,
+    "smokeLifetimeMin": 18.0,
+    "smokeLifetimeMax": 35.0,
+    "smokeSizeGrowth": 0.38,
+    "smokeInitSizeMult": 3.2,
+    "smokeWindInfluence": 0.40,
+    "turbulenceStrength": 1.0,
+    "windInfluence": 0.60,
+    "windRadius": 60.0,
+    "smokeTransitionAge": 0.30,
+    "smokeFadeAltitude": 200.0,
+    "leanFactor": 0.18,
+    "updraftStrength": 4.5,
+    "updraftSigma": 4.0,
+    "spreadRate": 0.5,
+    "turbulenceMode": "hash",
+    "curlNoiseScale": 0.4,
+    "vortexWindThreshold": 0.35,
+    "heatDistortionEnabled": true,
+    "dynamicLightingEnabled": true
+  },
+  "abilityBurst": {
+    "fireBoltCount": 30,
+    "flameWardCount": 60,
+    "expendableCount": 120,
+    "burstSpread": 2.0
+  },
+  "wyvern": {
+    "breathRange": 45.0,
+    "breathHalfAngle": 28.0,
+    "breathParticlesPerFrame": 200,
+    "breathDuration": 2.5,
+    "breathCooldown": 5.0,
+    "groundFireDuration": 10.0,
+    "directDamagePerSec": 15.0,
+    "edgeDamagePerSec": 6.0,
+    "directConeRadius": 5.0,
+    "edgeConeRadius": 15.0
+  },
+  "smoke": {
+    "radiusMultiplier": 4.0,
+    "peakAltitude": 80.0,
+    "topAltitude": 200.0,
+    "riseRate": 0.8,
+    "clearRate": 1.5,
+    "treeContribution": 0.05,
+    "imcThreshold": 0.85
+  },
+  "atmosphericSmoke": {
+    "enabled": true,
+    "segmentsPerPlume": 20,
+    "baseWidth": 16.0,
+    "topWidth": 44.0,
+    "maxHeight": 100.0,
+    "billowingFrequency": 0.05,
+    "windDriftScale": 0.5
+  },
+  "trees": {
+    "scatterMinGap": 3.0,
+    "scatterDensityThreshold": 0.44,
+    "clusterSeedSpacing": 12.0,
+    "clusterSeedDensityThreshold": 0.38,
+    "clusterCountMin": 5,
+    "clusterCountMax": 12
+  },
+  "qualityPresets": {
+    "low":    { "maxParticles": 400,   "heatDistortion": false, "dynamicLighting": false },
+    "medium": { "maxParticles": 1500,  "heatDistortion": false, "dynamicLighting": true  },
+    "high":   { "maxParticles": 5000,  "heatDistortion": true,  "dynamicLighting": true  },
+    "ultra":  { "maxParticles": 20000, "heatDistortion": true,  "dynamicLighting": true, "gpuParticles": true }
+  }
+}
